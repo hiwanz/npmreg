@@ -1,0 +1,33 @@
+{
+  "name": "npmreg",
+  "version": "0.0.0",
+  "main": "lib/npmreg.js",
+  "description": "A npm registry switching shortcut.",
+  "homepage": "https://github.com/hiwanz/npmreg",
+  "bugs": "https://github.com/hiwanz/npmreg/issues",
+  "author": {
+    "name": "hiwanz",
+    "email": "princeb4d@gmail.com",
+    "url": "https://github.com/hiwanz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiwanz/npmreg"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
