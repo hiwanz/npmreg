@@ -1,8 +1,7 @@
 {
   "name": "npmreg",
-  "version": "0.1.4",
-  "main": "bin/npmreg.js",
-  "bin": "bin/npmreg.js",
+  "version": "0.1.9",
+  "bin": "./bin/npmreg.js",
   "description": "A npm registry switching shortcut command.",
   "homepage": "https://github.com/hiwanz/npmreg",
   "bugs": "https://github.com/hiwanz/npmreg/issues",
@@ -17,7 +16,8 @@
   },
   "license": "MIT",
   "files": [
-    "lib"
+    "bin",
+    "config.json"
   ],
   "keywords": ["npmreg","npm registry"],
   "devDependencies": {
