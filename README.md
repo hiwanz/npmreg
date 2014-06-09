@@ -1,26 +1,23 @@
 # npmreg [![Build Status](https://secure.travis-ci.org/hiwanz/npmreg.png?branch=master)](http://travis-ci.org/hiwanz/npmreg)
 
-A npm registry switching shortcut.
+A npm registry mirror switching shortcut command.
 
 ## Getting Started
-Install the module with: `npm install npmreg`
+Install the module with: 
 
-```javascript
-var npmreg = require('npmreg');
-npmreg.awesome(); // "awesome"
-```
+`npm install npmreg -g`
 
-## Documentation
-_(Coming soon)_
+You can easily set registry to taobao mirror(http://registry.npm.taobao.org) with:
 
-## Examples
-_(Coming soon)_
+`npmreg taobao`
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+or set it back to default(http://registry.npmjs.org/) with:
+
+`npmreg default`
+
 
 ## Release History
-_(Nothing yet)_
+2014/6/9 15:47:01 Switching registry mirror between npmjs and taobao.
 
 ## License
 Copyright (c) 2014 hiwanz. Licensed under the MIT license.
