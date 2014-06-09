@@ -6,7 +6,7 @@
 	path = require('path'),
 	exec = require('child_process').exec,
 	repo = process.argv[2],
-	config = JSON.parse(fs.readFileSync(path.join(__dirname, '../config.json'),"utf-8"));
+	config = JSON.parse(fs.readFileSync(path.join(__dirname, '../config.json'),'utf-8'));
 
 	function setRegistry(){
 		if (typeof repo==='undefined') {
