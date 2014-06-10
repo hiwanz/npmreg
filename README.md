@@ -15,6 +15,17 @@ or set it back to default(http://registry.npmjs.org/) with:
 
 `npmreg default`
 
+## Supported Registry
+
+	{
+		"default":"http://registry.npmjs.org/",
+		"taobao":"http://registry.npm.taobao.org/",
+		"cnpm":"http://r.cnpmjs.org/",
+		"eu":"http://registry.npmjs.eu/",
+		"au":"http://registry.npmjs.org.au/",
+		"sl":"http://npm.strongloop.com/",
+		"nj":"https://registry.nodejitsu.com/"
+	}
 
 ## Release History
 2014/6/9 15:47:01 Switching registry mirror between npmjs and taobao.
