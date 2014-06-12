@@ -19,7 +19,7 @@
     "bin",
     "config.json"
   ],
-  "keywords": ["npmreg","npm registry"],
+  "keywords": ["npmreg","npm registry","registry switcher"],
   "devDependencies": {
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",

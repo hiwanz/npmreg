@@ -28,8 +28,5 @@
     "sub": true,//允许用[]形式访问对象属性
     "undef": true,//禁止明确未定义的变量调用，如果你的变量（myvar）是在其他文件中定义的，可以使用/*global myvar */绕过检测
     "unused": false,//允许定义没用的变量，在某些函数回调中，经常出现多个参数，但不一定会用
-    "multistr": false,//禁止多行字符串，改用加号连接
-    "globals": {
-      "jQuery": true
-    }
+    "multistr": false//禁止多行字符串，改用加号连接
 }

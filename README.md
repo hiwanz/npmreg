@@ -28,7 +28,10 @@ or set it back to default(http://registry.npmjs.org/) with:
 	}
 
 ## Release History
-2014/6/9 15:47:01 Switching registry mirror between npmjs and taobao.
+
+2014/6/10 11:32:11	Add supported registry.
+
+2014/6/9 15:47:01	Switching registry mirror between npmjs and taobao.
 
 ## License
 Copyright (c) 2014 hiwanz. Licensed under the MIT license.
