@@ -11,14 +11,24 @@ You can easily set registry to taobao mirror(http://registry.npm.taobao.org) wit
 
 `npmreg taobao`
 
-or set it back to default(http://registry.npmjs.org/) with:
+or set it back to npm(http://registry.npmjs.org/) with:
 
-`npmreg default`
+`npmreg npm`
+
+## Supported Command
+
+Add registry to config file:
+
+`npmreg add <newkey> <http://r.example.com/>`
+
+Remove registry from config file:
+
+`npmreg rm <key>`
 
 ## Supported Registry
 
 	{
-		"default":"http://registry.npmjs.org/",
+		"npm":"http://registry.npmjs.org/",
 		"taobao":"http://registry.npm.taobao.org/",
 		"cnpm":"http://r.cnpmjs.org/",
 		"eu":"http://registry.npmjs.eu/",
@@ -28,6 +38,7 @@ or set it back to default(http://registry.npmjs.org/) with:
 	}
 
 ## Release History
+2014/6/23 11:38:04 Add new command option.
 
 2014/6/10 11:32:11	Add supported registry.
 

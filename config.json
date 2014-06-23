@@ -1,9 +1,1 @@
-{
-	"default":"http://registry.npmjs.org/",
-	"taobao":"http://registry.npm.taobao.org/",
-	"cnpm":"http://r.cnpmjs.org/",
-	"eu":"http://registry.npmjs.eu/",
-	"au":"http://registry.npmjs.org.au/",
-	"sl":"http://npm.strongloop.com/",
-	"nj":"https://registry.nodejitsu.com/"
-}
+{"npm":"http://registry.npmjs.org/","taobao":"http://registry.npm.taobao.org/","cnpm":"http://r.cnpmjs.org/","eu":"http://registry.npmjs.eu/","au":"http://registry.npmjs.org.au/","sl":"http://npm.strongloop.com/","nj":"https://registry.nodejitsu.com/"}
