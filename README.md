@@ -25,24 +25,13 @@ Remove registry from config file:
 
 `npmreg rm <key>`
 
-## Supported Registry
+## Supported Registries
 
 	{
-		"npm":"http://registry.npmjs.org/",
-		"taobao":"http://registry.npm.taobao.org/",
-		"cnpm":"http://r.cnpmjs.org/",
-		"eu":"http://registry.npmjs.eu/",
-		"au":"http://registry.npmjs.org.au/",
-		"sl":"http://npm.strongloop.com/",
-		"nj":"https://registry.nodejitsu.com/"
+		"npm":"https://registry.npmjs.org/",
+		"taobao":"https://registry.npm.taobao.org/",
+		"cnpm":"https://r.cnpmjs.org/"
 	}
 
-## Release History
-2014/6/23 11:38:04 Add new command option.
-
-2014/6/10 11:32:11	Add supported registry.
-
-2014/6/9 15:47:01	Switching registry mirror between npmjs and taobao.
-
 ## License
-Copyright (c) 2014 hiwanz. Licensed under the MIT license.
+Copyright (c) 2021 hiwanz. Licensed under the MIT license.
