@@ -1,6 +1,6 @@
 {
   "name": "npmreg",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "bin": "./bin/npmreg.js",
   "description": "A npm registry switching shortcut command.",
   "homepage": "https://github.com/hiwanz/npmreg",
