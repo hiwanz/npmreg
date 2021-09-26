@@ -1,6 +1,6 @@
 {
   "name": "npmreg",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "bin": "./bin/npmreg.js",
   "description": "A npm registry switching shortcut command.",
   "homepage": "https://github.com/hiwanz/npmreg",
@@ -19,13 +19,18 @@
     "bin",
     "config.json"
   ],
-  "keywords": ["npmreg","npm registry","registry switcher"],
+  "keywords": [
+    "npmreg",
+    "npm registry",
+    "registry switcher"
+  ],
   "devDependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1",
-    "jshint-stylish": "^0.2.0"
+    "grunt": "^1.4.1",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^5.1.0",
+    "time-grunt": "^2.0.0"
   },
   "scripts": {
     "test": "grunt"
