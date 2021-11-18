@@ -7,7 +7,7 @@ Install the module with:
 
 `npm install npmreg -g`
 
-You can easily set registry to taobao mirror(http://registry.npm.taobao.org) with:
+You can easily set registry to taobao mirror(https://registry.npmmirror.com/) with:
 
 `npmreg taobao`
 
