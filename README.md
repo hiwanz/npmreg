@@ -28,9 +28,9 @@ Remove registry from config file:
 ## Supported Registries
 
 	{
-		"npm":"https://registry.npmjs.org/",
-		"taobao":"https://registry.npm.taobao.org/",
-		"cnpm":"https://r.cnpmjs.org/"
+		"npm": "https://registry.npmjs.org/",
+		"taobao": "https://registry.npmmirror.com/",
+		"cnpm": "https://r.cnpmjs.org/"
 	}
 
 ## License
