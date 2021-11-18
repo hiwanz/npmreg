@@ -1,17 +1,22 @@
 #!/usr/bin/env node
 (function () {
-	let fs = require('fs'),
-		path = require('path'),
-		exec = require('child_process').exec,
-		configFile = path.join(__dirname, '../config.json')
+	let fs = require('fs')
+	let path = require('path')
+	let exec = require('child_process').exec
+	let configFile = path.join(__dirname, '../config.json')
 
 	function lsConfig() {
 		let config = JSON.parse(fs.readFileSync(configFile, 'utf-8'))
 		let configList = ''
 		for (let item in config) {
-			configList += (item + '	' + config[item] + '\n')
+			configList += (item + '\t' + config[item] + '\n')
 		}
+		console.log('Available registry:\n')
 		console.log(configList)
+		console.log('Current registry:\n')
+		exec('npm config get registry', (error, stdout, stderr) => {
+			console.log(stdout)
+		})
 	}
 	
 	function addConfig() {
@@ -29,21 +34,17 @@
 		let config = JSON.parse(fs.readFileSync(configFile, 'utf-8'))
 		console.log('Removing', process.argv[3], 'from config...')
 		delete config[process.argv[3]]
-		fs.writeFile(configFile, JSON.stringify(config, null, 4), function (e) {
+		fs.writeFile(configFile, JSON.stringify(config, null, 2), function (e) {
 			console.log('Done!')
 			if (e) { throw e }
 		})
 	}
 
 	function sayHello() {
-		let usageString = 'Usage : npmreg taobao\n' +
-			'will set npm registry to http://registry.npm.taobao.org/\n' +
-			'visit https://github.com/hiwanz/npmreg for more help.\n\n' +
-			'Available registry:\n'
-
-		console.log(usageString)
+		console.log('Usage : npmreg taobao\n' +
+			'will set npm registry to https://registry.npmmirror.com/\n' +
+			'visit https://github.com/hiwanz/npmreg for more help.\n')
 		lsConfig()
-		process.exit()
 	}
 
 	function runApp() {
@@ -61,13 +62,12 @@
 			} else {
 				console.log(repo, 'can not be found in config!')
 			}
-		} else if (process.argv.length == 4 && process.argv[2] === 'rm') {
+		}
+		if (process.argv.length == 4 && process.argv[2] === 'rm') {
 			rmConfig()
-		} else if (process.argv.length == 5 && process.argv[2] === 'add') {
+		}
+		if (process.argv.length == 5 && process.argv[2] === 'add') {
 			addConfig()
-		} else {
-			console.log('I don\'t get what you want!:-(\n')
-			sayHello()
 		}
 	}
 
